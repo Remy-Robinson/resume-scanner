@@ -1,0 +1,37 @@
+Overall Architecture:
+
+Frontend (Vite)
+
+Built with React (recommended for modern Vite projects)
+
+Handles:
+
+File upload (PDF, DOCX, TXT)
+
+Display of results (parsed resume, scores, recommendations)
+
+Sending files to backend via API calls
+
+Backend (Python)
+
+Could be FastAPI or Flask
+
+Handles:
+
+File reception
+
+Text extraction from PDF/DOCX
+
+NLP analysis (skills extraction, keyword matching, scoring)
+
+Returns JSON results to frontend
+
+
+
+
+
+
+Takes "perfect" uploaded resume (company wants)
+Then take user resumes
+on the backend uses Cosine Similarity with TF-IDF to get a rating
+sends rating back to frontend
